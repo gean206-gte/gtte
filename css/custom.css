@@ -1,0 +1,477 @@
+.search-bar .input-group {
+    width: 100%;
+}
+
+.search-bar .form-control {
+    height: 40px;
+    color: #666666;
+    border: 1px solid #89CFF0;
+    border-radius: 4px;
+}
+
+.search-bar .input-group-append {
+    display: flex;
+}
+
+.search-bar .input-group-append select,
+.search-bar .input-group-append button {
+    height: 40px;
+    border: none;
+    background: none;
+    border-radius: 0 2px 2px 0;
+}
+
+.search-bar .input-group-append button {
+    width: 40px;
+    padding: 0 15px;
+    color: #89CFF0;
+}
+
+.search-bar .input-group-append button:hover {
+    background: #89CFF0;
+    color: #ffffff;
+}
+
+.header-slider-item {
+    position: relative;
+    display: inline-block;
+}
+
+.header-slider-item img {
+    width: 100%;
+    max-height: 400px;
+    display: block;
+}
+
+.header-slider-item .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff; /* Set text color */
+    z-index: 1; /* Set a higher z-index to make the overlay appear on top */
+    width: 100%;
+    max-width: 800px; /* Set a max-width for the overlay */
+    padding: 20px; /* Set padding to control the size of the overlay */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.header-slider-item h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.header-slider-item .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.header-slider .header-slider-caption {
+    background: none;
+}
+
+.product-item .product-title {
+    background: #EDB36F;
+}
+
+.product-item .product-price {
+    background: #EDB36F;
+}
+
+.p-15 {
+    padding: 0 15px;
+}
+
+#connect-buyer1 h2 {
+    font-size: 37px;
+    color: #89CFF0;
+    font-family: revert;
+}
+
+#connect-buyer1 ul {
+    margin-left: -30px;
+}
+
+#connect-buyer1 ul li {
+    width: 32%;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+}
+
+.get-quotes-1 p {
+    font-size: 14px;
+    color: #000000;
+}
+
+.hm-icn9 {
+    background-position: -3px -134px;
+    left: 10px;
+    top: -5px;
+}
+
+.getQuotes .get-quotes-1 {
+    color: #347ef5;
+    font-size: 60px;
+    margin-bottom: 30px;
+    width: 32%;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+}
+
+/* Pop-up styles */
+
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    display: flex;
+    flex-direction: column;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    overflow: hidden;
+    box-sizing: border-box;
+    max-width: 600px; /* Adjust max-width as needed */
+    margin: auto;
+}
+
+.popup-row {
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+/* Third Row */
+
+
+.label {
+     display: block;
+     margin-bottom: 5px;
+     font-weight: bold;
+ }
+
+textarea,
+input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.popup-row form div input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    max-width: 20%;
+    margin-left: auto;
+    margin-top: 10px;
+}
+
+/* Other existing styles remain unchanged */
+
+
+#popupImageContainer img {
+    width: 100%;
+    height: auto;
+    max-width: 100%; /* Ensure image doesn't exceed its original width */
+}
+
+.popup-header-row {
+    background-color: #3498db; /* Blue background color */
+    color: #fff; /* White text color */
+    padding: 10px; /* Adjust padding as needed */
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.popup-close {
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.popup-header-text {
+    flex: 1;
+    text-align: center;
+}
+
+.popup-header-text h2 {
+    margin: 0;
+    color: #ff0; /* Yellow text color */
+    font-weight: bold; /* Bold text */
+}
+
+.popup-header-text p {
+    margin: 0;
+}
+
+.popup-row form div {
+    display: flex;
+}
+
+
+.popup-row form div label {
+    flex: 1; /* Take up all available space */
+    margin-right: 5px; /* Optional: Add space between label and input */
+}
+
+.popup-row form div input,
+.popup-row form div textarea,
+.popup-row form div .iti{
+    flex: 2; /* Take up twice as much space as label */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+popup-row form div select {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+/* Responsive styles */
+@media (max-width: 767px) {
+    .popup-right {
+        text-align: left; /* Align text to the left on small screens */
+    }
+
+    .popup-row {
+        flex-direction: column; /* Stack columns on top of each other on small screens */
+    }
+
+    .popup-content {
+        max-width: 100%; /* Full width for small screens */
+        padding: 15px;
+    }
+}
+
+.footer-bottom {
+    padding: 5px 0;
+}
+
+.footer-bottom .copyright p, .footer-bottom .template-by p {
+    font-size: 12px;
+}
+
+.tab-content #description h4 {
+    background-color: #87CEFA;
+    color: #fff;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.dgte {
+    padding-top: 20px;
+}
+
+.section-header-pp h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #333;
+    line-height: 25px;
+}
+
+.section-header-pp {
+    padding-left: 75px;
+    position: relative;
+}
+
+.border-bttm {
+    border-bottom: 1px solid #ccc;
+}
+
+.heading-pp {
+    color: #08c;
+    background-image: -webkit-linear-gradient(bottom,rgba(255,255,255,1),rgba(255,255,255,0));
+    text-shadow: 1px 1px rgba(255,255,255,.75);
+    font-size: 1.1em;
+    background-color: #f2f9ff;
+    padding: 7px 10px;
+    margin-bottom: 10px;
+}
+
+.text-pp {
+    color: #666;
+    text-align: justify;
+    text-shadow: 1px 1px rgba(255,255,255,.75);
+    font: 12px/1.5em Segoe UI,system-ui,-apple-system,Arial,sans-serif;
+}
+
+.text-hp {
+    color: #666;
+    text-align: justify;
+    text-shadow: 1px 1px rgba(255,255,255,.75);
+    font: 14px/1.5em Segoe UI,system-ui,-apple-system,Arial,sans-serif;
+    font-size: inherit;
+}
+
+.text-pp-ol {
+    color: #666;
+    text-align: justify;
+    text-shadow: 1px 1px rgba(255,255,255,.75);
+    font: 12px/1.5em Segoe UI,system-ui,-apple-system,Arial,sans-serif;
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #aaa;
+    padding: 7px 0;
+}
+
+.footer-bottom .container .gtecp .copyright a {
+    color: #ccc;
+    font-size: 12px;
+}
+
+.header .navbar {
+    max-height: 460px;
+}
+
+.header-sc {
+    padding-left: 30px;
+    margin-top: 14px;
+    background-image: -webkit-linear-gradient(bottom,rgba(255,255,255,1),rgba(255,255,255,0));
+    text-shadow: 1px 1px rgba(255,255,255,.75);
+        color: #08c;
+}
+
+.client-header {
+    font-weight: 700;
+    line-height: 1.2;
+    font-family: "Roboto",sans-serif;
+}
+
+.feature h1 {
+    text-align: center;
+}
+
+.feature-content::before {
+    content: counter(1); /* Use a counter to generate numbers */
+    background-color: #4CAF50; /* Background color for the number */
+    color: #fff; /* Text color for the number */
+    border-radius: 50%; /* Optional: Make it round */
+    padding: 4px 8px; /* Optional: Adjust padding */
+    margin-right: 8px; /* Optional: Adjust spacing between number and text */
+    font-weight: bold; /* Optional: Adjust font weight */
+    display: inline-block; /* Ensure the number appears on the same line as the text */
+}
+
+.review .product-item {
+    background: #fff;
+    padding: 25px;
+    color: #347ef5;
+}
+
+.review .product-item h2{
+    font-size: 1.25em;
+    color: #000000;
+}
+
+.review .product-item h5{
+    color: #000000;
+}
+
+.ad-cont {
+    background: #fff;
+}
+
+.about-txt {
+   border-radius: 50%;
+   overflow: hidden;
+   border: 2px solid #000;
+   text-align: center; /* Center the text horizontally */
+   padding: 75px;
+}
+
+.about-txt i {
+    display: block;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.about-txt p {
+    margin: 0; /* Remove default margin for better spacing */
+    line-height: 1.4;
+}
+
+/*---- New template css ----*/
+.product-item .offer-text .btn:hover {
+    color: #347ef5 !important;
+}
+
+/*** Testimonial ***/
+.testimonial-carousel .owl-item .testimonial-item,
+.testimonial-carousel .owl-item.center .testimonial-item * {
+    transition: .5s;
+}
+
+.testimonial-carousel .owl-item.center .testimonial-item {
+    background: var(--primary) !important;
+    border-color: var(--secondary) !important;
+}
+
+.testimonial-carousel .owl-item.center .testimonial-item .position-absolute {
+    background: var(--secondary) !important;
+}
+
+.testimonial-carousel .owl-item.center .testimonial-item * {
+    color: #FFFFFF;
+}
+
+.testimonial-carousel .owl-item.center .testimonial-item h6 {
+    color: var(--dark) !important;
+}
+
+.testimonial-carousel .owl-dots {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.testimonial-carousel .owl-dot {
+    position: relative;
+    display: inline-block;
+    margin: 0 5px;
+    width: 15px;
+    height: 15px;
+    background: #DDDDDD;
+    border-radius: 15px;
+    transition: .5s;
+}
+
+.testimonial-carousel .owl-dot.active {
+    width: 30px;
+    background: var(--primary);
+}
+
+
