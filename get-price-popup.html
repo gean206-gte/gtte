@@ -1,0 +1,62 @@
+<!-- popup.html -->
+<div class="popup-content">
+    <div class="popup-row popup-header-row">
+        <div class="popup-header-text">
+            <h2>WHY WASTE TIME?</h2>
+            <p>Tell us your <b>requirements</b> & <br> get the quotes instantly on your mobile.</p>
+        </div>
+        <span class="popup-close" onclick="closePopup()">&times;</span>
+    </div>
+
+    <!-- Form Section -->
+    <div class="popup-row">
+        <form id="popupForm" action="php/submit_form.php" method="post">
+            <!-- Product Image Container (will be added dynamically using JavaScript) -->
+<!--            <div id="popupImageContainer"></div>-->
+
+            <!-- Product -->
+            <div>
+                <label for="product">Product:</label>
+                <input type="text" id="product" name="product" placeholder="What product you need">
+            </div>
+
+            <!-- Payment Terms -->
+            <div>
+                <label for="paymentTerms">Payment Terms:</label>
+                <input type="text" id="paymentTerms" name="paymentTerms" placeholder="How would you like to do the payment?">
+            </div>
+
+            <!-- Expected Price -->
+            <div>
+                <label for="expectedPrice">Expected Price:</label>
+                <input type="text" id="expectedPrice" name="expectedPrice">
+            </div>
+
+            <!-- Email ID -->
+            <div>
+                <label for="emailId">Email ID:</label>
+                <input type="email" id="emailId" name="emailId" placeholder="Enter email" required>
+            </div>
+
+            <!-- Requirements -->
+            <div>
+                <label for="requirements">Requirements:</label>
+                <textarea id="requirements" placeholder="Enter your requirement" name="requirements" rows="4" cols="50" ></textarea>
+            </div>
+
+            <!-- Mobile Number -->
+            <div>
+                <label for="mobileNumber">Mobile Number:</label>
+                <input type="tel" id="mobileNumber" name="mobileNumber" pattern="[0-9]+" minlength="10" placeholder="Enter mobile number" title="Only numeric characters are allowed" required>
+            </div>
+
+
+            <!-- Submit Button -->
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</div>
+
+
