@@ -38,7 +38,7 @@
         <div class="row bg-secondary py-1 px-xl-5">
             <div class="col-lg-6 d-none d-lg-block">
                 <div class="d-inline-flex align-items-center h-100">
-                    <a class="text-body mr-3" href="">About</a>
+                    <a class="text-body mr-3" href="about-us.html">About</a>
                     <a class="text-body mr-3" href="">Contact</a>
                     <a class="text-body mr-3" href="">Help</a>
                     <a class="text-body mr-3" href="">FAQs</a>
@@ -46,6 +46,26 @@
             </div>
             <div class="col-lg-6 text-center text-lg-right">
                 <div class="d-inline-flex align-items-center">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-light dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-heart"></i>
+                            Buy
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <button class="dropdown-item" type="button">Sign in</button>
+                            <button class="dropdown-item" type="button">Create Free Account</button>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-light dropdown-toggle" data-toggle="dropdown">
+                            <i class="fas fa-store-alt"></i>
+                            Sell
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <button class="dropdown-item" type="button">Sign in</button>
+                            <button class="dropdown-item" type="button">Create Free Account</button>
+                        </div>
+                    </div>
                     <div class="btn-group">
                         <button type="button" class="btn btn-sm btn-light dropdown-toggle" data-toggle="dropdown">My Account</button>
                         <div class="dropdown-menu dropdown-menu-right">
@@ -58,7 +78,7 @@
                         <div class="dropdown-menu dropdown-menu-right">
                             <button class="dropdown-item" type="button">EUR</button>
                             <button class="dropdown-item" type="button">GBP</button>
-                            <button class="dropdown-item" type="button">CAD</button>
+                            <button class="dropdown-item" type="button">USD</button>
                         </div>
                     </div>
                     <div class="btn-group">
@@ -102,7 +122,7 @@
                 </form>
             </div>
             <div class="col-lg-4 col-6 text-right">
-                <p class="m-0">Customer Service</p>
+                <p class="m-0">Sales & Support Service</p>
                 <h5 class="m-0">+012 345 6789</h5>
             </div>
         </div>
@@ -164,14 +184,17 @@
                             <a href="contact.html" class="nav-item nav-link">Contact</a>
                         </div>
                         <div class="navbar-nav ml-auto py-0 d-none d-lg-block">
-                            <a href="" class="btn px-0">
-                                <i class="fas fa-heart text-primary"></i>
-                                <span class="badge text-secondary border border-secondary rounded-circle" style="padding-bottom: 2px;">0</span>
-                            </a>
-                            <a href="" class="btn px-0 ml-3">
-                                <i class="fas fa-shopping-cart text-primary"></i>
-                                <span class="badge text-secondary border border-secondary rounded-circle" style="padding-bottom: 2px;">0</span>
-                            </a>
+                            <div class="offer-text">
+                                <a class="btn btn-primary" onclick="openPopup('')">Post your requirement</a>
+                            </div>
+<!--                            <a href="wishlist.html" class="btn wishlist">-->
+<!--                                <i class="fa fa-heart"></i>-->
+<!--                                <span>Buyer</span>-->
+<!--                            </a>-->
+<!--                            <a href="cart.html" class="btn cart">-->
+<!--                                <i class="fas fa-store-alt"></i>-->
+<!--                                <span>Seller</span>-->
+<!--                            </a>-->
                         </div>
                     </div>
                 </nav>
@@ -616,6 +639,32 @@
     </div>
     <!-- Featured Products End -->
 
+    <!-- Get Free Quotes Start -->
+    <div class="container-fluid getQuotes product">
+        <div class="container-fluid">
+            <div class="row px-xl-5 align-items-center">
+                <div class="col-lg-6 col-md-6 feature-col" id="connect-buyer1" style="background: #fff; padding: 25px;">
+                    <div class="section-header p-15">
+                        <h2>Request <b>free</b> quotes from several sellers</h2>
+                        <div class="get-quotes-1">
+                            <i class="far fa-paper-plane"></i>
+                            <p>Let us know <br><b>your needs.</b></p>
+                        </div>
+                        <div class="get-quotes-1">
+                            <i class="fas fa-envelope"></i>
+                            <p>Get complimentary quotes <br>from <b>sellers</b></p>
+                        </div>
+                        <div class="get-quotes-1">
+                            <i class="fas fa-handshake"></i>
+                            <p>Finalize the<br> <b> Deal</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Get Free Quotes End -->
+
     <!-- Top Products Start -->
     <div class="container-fluid pt-5 pb-3">
         <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span class="bg-secondary pr-3">Top Products</span></h2>
@@ -782,7 +831,7 @@
         <div class="row px-xl-5">
             <div class="col-md-6">
                 <div class="product-offer mb-30" style="height: 300px;">
-                    <img class="img-fluid" src="img/offer-1.jpg" alt="">
+                    <img class="img-fluid" src="img/gte-category-1.jpg" alt="">
                     <div class="offer-text">
                         <h6 class="text-white text-uppercase">Save 20%</h6>
                         <h3 class="text-white mb-3">Special Offer</h3>
@@ -792,7 +841,7 @@
             </div>
             <div class="col-md-6">
                 <div class="product-offer mb-30" style="height: 300px;">
-                    <img class="img-fluid" src="img/offer-2.jpg" alt="">
+                    <img class="img-fluid" src="img/gte-category-2.jpg" alt="">
                     <div class="offer-text">
                         <h6 class="text-white text-uppercase">Save 20%</h6>
                         <h3 class="text-white mb-3">Special Offer</h3>
