@@ -639,4 +639,14 @@ popup-row form div select {
     text-align: center;
 }
 
+.modal-head-orange-bg {
+    background-color: #FFD580;
+}
+
+.head-orange-bg {
+    font-weight: 700;
+    color: #733d04;
+    font-size: 1.5em;
+}
+
 
