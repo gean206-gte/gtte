@@ -91,7 +91,7 @@
 
 #connect-buyer1 h2 {
     font-size: 37px;
-    color: #89CFF0;
+    color: #347ef5;
     font-family: revert;
 }
 
@@ -118,7 +118,7 @@
 }
 
 .getQuotes .get-quotes-1 {
-    color: #347ef5;
+    color: #FFD333;
     font-size: 60px;
     margin-bottom: 30px;
     width: 32%;
@@ -129,6 +129,7 @@
 
 /* Pop-up styles */
 
+/* Default styles */
 .popup-container {
     display: none;
     position: fixed;
@@ -140,6 +141,7 @@
     justify-content: center;
     align-items: center;
     z-index: 1000;
+    overflow: auto; /* Make it scrollable */
 }
 
 .popup-content {
@@ -147,10 +149,12 @@
     flex-direction: column;
     background-color: #f1f1f1;
     border-radius: 10px;
-    overflow: hidden;
+    overflow: auto;
     box-sizing: border-box;
     max-width: 600px; /* Adjust max-width as needed */
+    width: 100%; /* Make the width 100% */
     margin: auto;
+    max-height: 80%; /* Limit the maximum height */
 }
 
 .popup-row {
@@ -158,6 +162,67 @@
     padding: 20px;
     flex-wrap: wrap;
 }
+
+/* Adjust the padding and other styles for smaller screens */
+@media (max-width: 768px) {
+    .popup-row {
+        padding: 15px;
+    }
+}
+
+/* Adjust the padding and other styles for even smaller screens */
+@media (max-width: 576px) {
+    .popup-row {
+        padding: 10px;
+    }
+}
+
+/* Add more media queries for smaller screens if needed */
+
+/* Close button styles */
+.popup-close {
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: auto;
+    color: #333;
+}
+
+/* Form input styles */
+form {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form input,
+form textarea {
+    width: calc(100% - 20px); /* Adjusted for padding */
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+/* Adjust input styles for smaller screens */
+@media (max-width: 576px) {
+    form input,
+    form textarea {
+        padding: 8px;
+    }
+}
+
+/* Submit button styles */
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
 
 /* Third Row */
 
@@ -472,6 +537,106 @@ popup-row form div select {
 .testimonial-carousel .owl-dot.active {
     width: 30px;
     background: var(--primary);
+}
+
+/*Membership Plan*/
+
+.pricing-table {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+.pricing-table .cp-ta {
+    text-align: left;
+    background-color: #dcdcdc;
+}
+
+.pricing-table .plan-cross{
+    color: #EF233C;
+}
+
+.pricing-table .plan-check{
+    color: #9ad039;
+}
+
+.pricing-table .txt-ctr {
+    text-align: center !important;
+}
+
+.member-plan, .premiumPlus {
+    background: #fff;
+    font-size: 15px;
+    border-bottom: 1px solid #ccc;
+    font-family: 'Roboto',sans-serif;
+}
+
+.pricing-table .orange-bg {
+    background-color: #FFD580;
+}
+
+.pricing-table .green-bg {
+    background-color: #55c8a1;
+}
+
+.pricing-table .blue-bg {
+    background-color: #51afe0;
+}
+
+.pricing-table .red-bg {
+    background-color: #f65c5d;
+}
+
+.pricing-table .yellow-bg {
+    background-color: #FAFAD2;
+}
+
+.pricing-table .txt-plan-green {
+    font-weight: 700;
+    color: #00551e;
+    font-size: 1.5em;
+}
+
+.pricing-table .txt-plan-orange {
+    font-weight: 700;
+    color: #733d04;
+    font-size: 1.5em;
+}
+
+.pricing-table .txt-plan-blue {
+    font-weight: 700;
+    color: #003855;
+    font-size: 1.5em;
+}
+
+.pricing-table .txt-plan-red {
+    font-weight: 700;
+    color: #760001;
+    font-size: 1.5em;
+}
+
+.pricing-table .txt-plan-pr {
+    font-weight: 700;
+    color: #333;
+    font-size: 1.6em;
+}
+
+.pricing-table .txt-plan-py {
+    font-weight: 400;
+    color: #333;
+    font-size: .7em;
+    text-align: right;
+}
+
+.db {
+    display: block;
+}
+
+.dul {
+    color: #999;
+}
+
+.head-ctr {
+    text-align: center;
 }
 
 

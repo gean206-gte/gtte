@@ -1,34 +1,17 @@
-function openPopup(productName) {
-    // Load popup content dynamically
-    fetch('get-price-popup.html')
-        .then(response => response.text())
-        .then(html => {
-            // Set product name and dynamic content in the popup
-            const popupContent = document.getElementById('popupContainer');
-            popupContent.innerHTML = html;
+document.addEventListener('DOMContentLoaded', function () {
+        // Find all buttons with the specified class
+        var openModalBtns = document.querySelectorAll('.openModalBtn');
 
-            // Initialize intlTelInput on the phone input field
-            try {
-                var input = popupContent.querySelector("#mobileNumber");
-                window.intlTelInput(input, {
-                    separateDialCode: true,
-                    initialCountry: "IN", // Set initial country to India
-                    utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/js/utils.js",
-                });
-            } catch (error) {
-                console.error("Error initializing intlTelInput:", error);
-            }
-
-            // Display the popup
-            popupContent.style.display = 'flex';
+        // Attach a click event listener to each button
+        openModalBtns.forEach(function (btn) {
+            btn.addEventListener('click', function () {
+                // Trigger Bootstrap modal by its ID
+                var myModal = new bootstrap.Modal(document.getElementById('myModal'));
+                myModal.show();
+            });
         });
-}
+    });
 
-
-function closePopup() {
-    // Hide the popup
-    document.getElementById('popupContainer').style.display = 'none';
-}
 
 document.addEventListener("DOMContentLoaded", function () {
     // Your other DOMContentLoaded code here (if any)
