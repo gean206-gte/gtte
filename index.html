@@ -103,25 +103,44 @@
             </div>
         </div>
         <div class="row align-items-center bg-light py-3 px-xl-5 d-none d-lg-flex">
-            <div class="col-lg-4">
+            <div class="col-lg-3">
                 <a href="" class="text-decoration-none">
                     <span class="h1 text-uppercase text-primary bg-dark px-2">GTE</span>
                     <span class="h1 text-uppercase text-dark bg-primary px-2 ml-n1">Shop</span>
                 </a>
             </div>
-            <div class="col-lg-4 col-6 text-left">
-                <form action="">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search for products">
+            <!-- SEARCH BAR -->
+            <div class="col-lg-6 col-6 text-left">
+                <div class="header-search input-group">
+                    <form onsubmit="return false">
+                        <select class="input-select">
+                            <option value="0">Products</option>
+                            <option value="1">Services</option>
+                            <option value="1">BuyLeads </option>
+                        </select>
+                        <input class="input form-control" id="search" type="text" placeholder="Search for Products/Services">
                         <div class="input-group-append">
                             <span class="input-group-text bg-transparent text-primary">
                                 <i class="fa fa-search"></i>
                             </span>
                         </div>
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
-            <div class="col-lg-4 col-6 text-right">
+            <!-- /SEARCH BAR -->
+<!--            <div class="col-lg-4 col-6 text-left">-->
+<!--                <form action="">-->
+<!--                    <div class="input-group">-->
+<!--                        <input type="text" class="form-control" placeholder="Search for products">-->
+<!--                        <div class="input-group-append">-->
+<!--                            <span class="input-group-text bg-transparent text-primary">-->
+<!--                                <i class="fa fa-search"></i>-->
+<!--                            </span>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </form>-->
+<!--            </div>-->
+            <div class="col-lg-3 col-6 text-right">
                 <p class="m-0">Sales & Support Service</p>
                 <h5 class="m-0">+012 345 6789</h5>
             </div>
@@ -466,7 +485,6 @@
         </div>
     </div>
     <!-- Categories End -->
-
 
     <!-- Featured Products Start -->
     <div class="container-fluid pt-5 pb-3">
@@ -858,6 +876,36 @@
     </div>
     <!-- Top Products End -->
 
+    <!-- Featured Start -->
+    <div class="container-fluid pt-5">
+        <div class="row px-xl-5 pb-3">
+            <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                <div class="d-flex align-items-center bg-light mb-4" style="padding: 30px;">
+                    <h1 class="fa fa-check text-primary m-0 mr-3"></h1>
+                    <h6 class="font-weight-semi-bold m-0">Connect with Verified Seller</h6>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                <div class="d-flex align-items-center bg-light mb-4" style="padding: 30px;">
+                    <h1 class="fa fa-shipping-fast text-primary m-0 mr-2"></h1>
+                    <h6 class="font-weight-semi-bold m-0">Pay With GTE</h6>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                <div class="d-flex align-items-center bg-light mb-4" style="padding: 30px;">
+                    <h1 class="fas fa-handshake text-primary m-0 mr-3"></h1>
+                    <h6 class="font-weight-semi-bold m-0">Sell on GTE for Free</h6>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                <div class="d-flex align-items-center bg-light mb-4" style="padding: 30px;">
+                    <h1 class="fas fa-rupee-sign text-primary m-0 mr-3"></h1>
+                    <h6 class="font-weight-semi-bold m-0">24/7 Help & Support</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Featured End -->
 
     <!-- Offer Start -->
     <div class="container-fluid pt-5 pb-3">
