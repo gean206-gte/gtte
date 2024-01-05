@@ -373,6 +373,10 @@ popup-row form div select {
     border-bottom: 1px solid #ccc;
 }
 
+.GDHeaderTop__main {
+    background: hsl(0 0% 96% / .97);
+}
+
 .heading-pp {
     color: #08c;
     background-image: -webkit-linear-gradient(bottom,rgba(255,255,255,1),rgba(255,255,255,0));
@@ -699,5 +703,27 @@ popup-row form div select {
     background-color: #FFF;
     width: 100%;
 }
+
+.gst-msg {
+    font-size: 0.7em;
+    color: #000;
+    text-align: right;
+    padding: 0px 10px 0px 10px
+}
+
+.buyleads-header {
+    font-weight: 500;
+    color: #347ef5;
+    font-size: 1.2em;
+}
+
+.pricing-table .bk-blue-bg {
+    background-color: #ADD8E6;
+}
+
+.pricing-table .txt-dark-bg {
+    color: #000;;
+}
+
 
 

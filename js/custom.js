@@ -12,6 +12,20 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
+    document.addEventListener('DOMContentLoaded', function () {
+            // Find all buttons with the specified class
+            var openModalBtns = document.querySelectorAll('.openJoinDealBtn');
+
+            // Attach a click event listener to each button
+            openModalBtns.forEach(function (btn) {
+                btn.addEventListener('click', function () {
+                    // Trigger Bootstrap modal by its ID
+                    var myModal = new bootstrap.Modal(document.getElementById('joinDealModal'));
+                    myModal.show();
+                });
+            });
+        });
+
 
 document.addEventListener("DOMContentLoaded", function () {
     // Your other DOMContentLoaded code here (if any)
