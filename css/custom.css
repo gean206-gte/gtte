@@ -725,5 +725,145 @@ popup-row form div select {
     color: #000;;
 }
 
+.btn-lnk:hover {
+     color: #ffc800 !important;
+}
+
+.prh-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.prh-right {
+    display: flex;
+    align-items: center;
+    list-style: none;
+
+}
+
+.prh-right li {
+    margin-right: 35px;
+    font-size: 16px;
+    color: #666;
+}
+
+.prh-right li:last-child {
+    margin-right: 0;
+}
+.prh-right li.nam {
+    font-size: 16px;
+    color: #666;
+}
+
+/*post-but-req*/
+
+.scs-custom-component-wrapper {
+    overflow: hidden;
+}
+
+.container-max-width {
+    overflow: hidden;
+}
+
+.GD-LandingWithCTA__shadow {
+    height: 100%;
+    width: 100%;
+    padding: 30px 0;
+    min-height: 500px;
+}
+
+.container-max-width {
+    overflow: hidden;
+}
+.GD-LandingWithCTA {
+    min-height: 500px;
+    background-position: center 10%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+}
+
+.GD-LandingWithCTA__titles {
+    margin-top: 30px;
+}
+
+.GD-LandingWithCTA__titles.left .big, .GD-LandingWithCTA__titles.left .medium {
+    text-align: left;
+}
+
+#lft_prd_desc {
+    min-height: 192px;
+}
+
+.lh21 {
+    line-height: 21px;
+}
+.mt10 {
+    margin-top: 10px;
+}
+
+.fw4 {
+    font-weight: 400;
+}
+
+.fs20, .tabcontent h2, h3 {
+    font-size: 20px;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+.popup_lft ul li {
+    padding-bottom: 20px;
+}
+
+.lh1-1 {
+    line-height: 1.1;
+}
+.df {
+    display: flex;
+}
+.pr {
+    position: relative;
+}
+.fw3 {
+    font-weight: 300;
+}
+.fs14 {
+    font-size: 14px;
+}
+
+.popup_lft ul li span {
+    min-width: 20px;
+    min-height: 20px;
+    max-width: 20px;
+    max-height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.bg0, .catg_card.catg_card_vm>a {
+    background-color: #fff;
+}
+
+.clr0 {
+    color: #fff;
+}
+
+.bg1 {
+    background-color: #2e3192;
+}
+
+.popup_lft ul li:after {
+    position: absolute;
+    top: 0;
+    left: 2%;
+    height: 100%;
+    width: 0;
+    border: 1px dashed #fff;
+    content: "";
+}
+
 
 

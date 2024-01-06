@@ -41,7 +41,7 @@ if (navigator.geolocation) {
             const longitude = position.coords.longitude;
 
             // Do something with the user's location, e.g., display it on the page
-            console.log(`User's location: ${latitude}, ${longitude}`);
+//            console.log(`User's location: ${latitude}, ${longitude}`);
 
             // You can also make use of the location data to customize the user experience
             // For example, you can make an API call to get additional information based on the user's location.
