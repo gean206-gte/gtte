@@ -145,15 +145,16 @@
             <nav class="collapse position-absolute navbar navbar-vertical navbar-light align-items-start p-0 bg-light"
                  id="navbar-vertical" style="width: calc(100% - 30px); z-index: 999;">
                 <div class="navbar-nav w-100">
-                    <div class="nav-item dropdown dropright">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Agriculture <i
-                                class="fa fa-angle-right float-right mt-1"></i></a>
-                        <div class="dropdown-menu position-absolute rounded-0 border-0 m-0">
-                            <a class="dropdown-item" href="">Men's Dresses</a>
-                            <a class="dropdown-item" href="">Women's Dresses</a>
-                            <a class="dropdown-item" href="">Baby's Dresses</a>
-                        </div>
-                    </div>
+                    <a class="nav-item nav-link" href="">Agriculture</a>
+<!--                    <div class="nav-item dropdown dropright">-->
+<!--                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Agriculture <i-->
+<!--                                class="fa fa-angle-right float-right mt-1"></i></a>-->
+<!--                        <div class="dropdown-menu position-absolute rounded-0 border-0 m-0">-->
+<!--                            <a class="dropdown-item" href="">Men's Dresses</a>-->
+<!--                            <a class="dropdown-item" href="">Women's Dresses</a>-->
+<!--                            <a class="dropdown-item" href="">Baby's Dresses</a>-->
+<!--                        </div>-->
+<!--                    </div>-->
                     <a class="nav-item nav-link" href="">Apparels & Fashion</a>
                     <a class="nav-item nav-link" href="">Chemicals</a>
                     <a class="nav-item nav-link" href="">Constructions & Real Estate</a>
@@ -687,6 +688,31 @@
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 feature-col control-group">
+                                <input aria-invalid="false" class="form-control"
+                                       data-validation-required-message="Quantity"
+                                       id="quantity" placeholder="Quantity" required="required" type="text">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="col-lg-6 col-md-6 feature-col control-group">
+                                <input aria-invalid="false" class="form-control"
+                                       data-validation-required-message="Unit of Measurement" id="measurement"
+                                       placeholder="Unit of Measurement" required="required"
+                                       type="text">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+<!--                        <div class="row col-md-12 control-group">-->
+<!--                            <input aria-invalid="false" class="col-md-4 form-control"-->
+<!--                                   data-validation-required-message="Quantity"-->
+<!--                                   id="quantity" placeholder="Quantity" required="required" type="text">-->
+<!--                            <input aria-invalid="false" class="col-md-8 form-control"-->
+<!--                                   data-validation-required-message="Unit of Measurement" id="measurement"-->
+<!--                                   placeholder="Unit of Measurement" required="required"-->
+<!--                                   type="text">-->
+<!--                            <p class="help-block text-danger"></p>-->
+<!--                        </div>-->
                         <div class="control-group">
                             <input class="form-control" data-validation-required-message="Enter your Business name"
                                    id="business-name" placeholder="Your Business Name"
@@ -695,7 +721,6 @@
                         </div>
                         <div>
                             <button class="btn btn-primary py-2 px-4" id="sendMessageButton" type="submit">Submit
-                                Requirement
                             </button>
                         </div>
                     </form>
@@ -890,7 +915,7 @@
         </div>
         <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
             <div class="d-flex align-items-center bg-light mb-4" style="padding: 30px;">
-                <h1 class="fas fa-rupee-sign text-primary m-0 mr-3"></h1>
+                <h1 class="fas fa-solid fa-headset text-primary m-0 mr-3"></h1>
                 <h6 class="font-weight-semi-bold m-0">24/7 Help & Support</h6>
             </div>
         </div>
@@ -1088,14 +1113,14 @@
 
 <!-- suppliers by state Start -->
 <div class="container-fluid pt-5">
-    <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4 head-ctr"><span class="bg-secondary pr-3">Find suppliers by states</span>
+    <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4 head-ctr"><span class="bg-secondary pr-3">Find suppliers top states</span>
     </h2>
     <div class="row px-xl-5 pb-3">
         <div class="text-center py-4 col-lg-2 product-img position-relative overflow-hidden">
             <a class="text-decoration-none" href="">
                 <div class="offer-text">
                     <img alt="" class="img-fluid" src="img/states/up.png">
-                    <h6 class="text-white text-uppercase" style="margin-top: -20px;">Uttar Pradesh</h6>
+                    <h6 class="text-uppercase">Uttar Pradesh</h6>
                 </div>
             </a>
         </div>
@@ -1103,7 +1128,7 @@
             <a class="text-decoration-none" href="">
                 <div class="offer-text">
                     <img alt="" class="img-fluid" src="img/states/maharashtra.png">
-                    <h6 class="text-white text-uppercase" style="margin-top: -20px;">Maharashtra</h6>
+                    <h6 class="text-uppercase">Maharashtra</h6>
                 </div>
             </a>
         </div>
@@ -1111,7 +1136,7 @@
             <a class="text-decoration-none" href="">
                 <div class="offer-text">
                     <img alt="" class="img-fluid" src="img/states/delhi.png">
-                    <h6 class="text-white text-uppercase" style="margin-top: -20px;">Delhi</h6>
+                    <h6 class="text-uppercase">Delhi</h6>
                 </div>
             </a>
         </div>
@@ -1119,7 +1144,7 @@
             <a class="text-decoration-none" href="">
                 <div class="offer-text">
                     <img alt="" class="img-fluid" src="img/states/madhya-pra.png">
-                    <h6 class="text-white text-uppercase" style="margin-top: -20px;">Madhya Pradesh</h6>
+                    <h6 class="text-uppercase">Madhya Pradesh</h6>
                 </div>
             </a>
         </div>
@@ -1127,7 +1152,7 @@
             <a class="text-decoration-none" href="">
                 <div class="offer-text">
                     <img alt="" class="img-fluid" src="img/states/karnataka.png">
-                    <h6 class="text-white text-uppercase" style="margin-top: -20px;">Karnataka</h6>
+                    <h6 class="text-uppercase">Karnataka</h6>
                 </div>
             </a>
         </div>
@@ -1135,7 +1160,7 @@
             <a class="text-decoration-none" href="">
                 <div class="offer-text">
                     <img alt="" class="img-fluid" src="img/states/rajesthan.png">
-                    <h6 class="text-white text-uppercase" style="margin-top: -20px;">Rajasthan</h6>
+                    <h6 class="text-uppercase">Rajasthan</h6>
                 </div>
             </a>
         </div>

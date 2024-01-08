@@ -5,6 +5,9 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = htmlspecialchars($_POST['name']);
     $email = htmlspecialchars($_POST['email']);
@@ -16,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     try {
         // Server settings
         $mail->isSMTP();
-        $mail->Host       = 'mail.gettogetherexporters.com';
+        $mail->Host       = 'cloud3.googiehost.com';
         $mail->SMTPAuth   = true;
         $mail->Username   = 'gettoge1@gettogetherexporters.com';  // Replace with your email address
         $mail->Password   = 'Zd8a{gKv@Cez6v+';  // Replace with your email password
@@ -24,8 +27,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Port       = 587;  // Adjust the port if needed
 
         // Recipients
-        $mail->setFrom($email, $name);
-        $mail->addAddress('gettoge1@gettogetherexporters.com', 'Recipient Name');
+        $mail->setFrom("info@gettogetherexporters.com", $name);
+        $mail->addAddress('info@gettogetherexporters.com', 'Recipient Name');
 
     
         // Content
@@ -36,6 +39,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->send();
         echo "Email sent successfully!";
     } catch (Exception $e) {
-        echo "Error: " . $mail->ErrorInfo;
+        // Log the error message (you can customize the log file path and format)
+        error_log("Email sending failed: " . $mail->ErrorInfo, 0);
+    
+        // Display a user-friendly error message
+        echo "Oops! Something went wrong. Please try again later.";
     }
 }
