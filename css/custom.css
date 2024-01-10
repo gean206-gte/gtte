@@ -865,5 +865,9 @@ popup-row form div select {
     content: "";
 }
 
-
+@media (max-width: 992px) {
+    .bg-dark {
+        background-color: #1D2833 !important; /* Set the color for mobile and tablet screens */
+    }
+}
 
